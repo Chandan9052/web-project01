@@ -4,7 +4,7 @@
   <groupId>com.digital</groupId>
   <artifactId>web-project</artifactId>
   <packaging>war</packaging>
-  <version>1.22-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <name>web-project Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
