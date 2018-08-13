@@ -15,6 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
   <repository>
     <id>releases</id>
     <url>http://104.196.96.172:8081/nexus/content/repositories/releases</url>
@@ -23,7 +24,21 @@
     <id>snapshots</id>
     <url>http://104.196.96.172:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
-  <build>
+</distributionManagement>
+<build>
+	<plugins>
+<plugin>
+   <groupId>org.apache.tomcat.maven</groupId>
+   <artifactId>tomcat7-maven-plugin</artifactId>
+   <version>2.2</version>
+   <configuration>
+  	 <url>http://104.196.96.172:9999/manager/text</url>
+  	 <server>TomcatServer</server>
+  	 <path>/WebApps</path>
+   </configuration>
+</plugin>
+</plugins>
+
     <finalName>web-project</finalName>
   </build>
 </project>
