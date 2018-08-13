@@ -15,6 +15,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <repository>
+    <id>releases</id>
+    <url>http://104.196.96.172:8081/nexus/content/repositories/releases</url>
+  </repository>
+<snapshotRepository>
+    <id>snapshots</id>
+    <url>http://104.196.96.172:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
   <build>
     <finalName>web-project</finalName>
   </build>
